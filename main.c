@@ -6,16 +6,16 @@ AF_DCMotor motor3(3);
 AF_DCMotor motor4(4);
 
 void setup() {
-    motor1.setSpeed(200);
+    motor1.setSpeed(255);
     motor1.run(RELEASE);
 
-    motor2.setSpeed(200);
+    motor2.setSpeed(255);
     motor2.run(RELEASE);
 
-    motor3.setSpeed(200);
+    motor3.setSpeed(255);
     motor3.run(RELEASE);
 
-    motor4.setSpeed(200);
+    motor4.setSpeed(255);
     motor4.run(RELEASE);
 
 }
@@ -23,17 +23,17 @@ void setup() {
 void loop() {
 
     goForward();
-    delay(1000);
+    delay(2000);
     turnLeft();
-    delay(500);
-    goForward();
     delay(1000);
+    goForward();
+    delay(2000);
     goBackward();
-    delay(1000);
+    delay(2000);
     turnRight();
-    delay(300);
-    goForward();
     delay(1000);
+    goForward();
+    delay(2000);
 
     stayStill();
     delay(3000);
